@@ -3,12 +3,12 @@ include /dist/pug/settings/bemto-settings
 include /dist/pug/utils/function
 
 doctype html
-html(lang=data('lang'))
+html(lang=data("lang"))
     head
         include base/meta/base
-        title= data('title')
+        title= data("title")
         block head_link
-            link(rel='stylesheet', href="/statics/css/style.min.css")/
+            link(rel="stylesheet", href="/assets/css/style.min.css")/
         block custom_head_link
     body
         .wrap
@@ -22,11 +22,11 @@ html(lang=data('lang'))
             include section/footer
 
         block footer_link
-            script(src="/statics/vendor/jquery-3.3.1.js")
-            script(src="/statics/vendor/inputmask/inputmask.js")
-            script(src="/statics/vendor/inputmask/inputmask.extensions.js")
-            script(src="/statics/vendor/inputmask/jquery.inputmask.js")
-            script(src="/statics/js/payment-system.js")
-            script(src="/statics/js/main.js")
+            script(src="/assets/vendor/jquery-3.3.1.js")
+            script(src="/assets/vendor/inputmask/inputmask.js")
+            script(src="/assets/vendor/inputmask/inputmask.extensions.js")
+            script(src="/assets/vendor/inputmask/jquery.inputmask.js")
+            script(src="/assets/js/payment-system.js")
+            script(src="/assets/js/main.js")
 
         block custom_footer_link
