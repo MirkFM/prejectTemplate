@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42;
+    color: #333;
+    @include bg('bg.png', repeat);
+}
+
+.wrap {
+    width: 670px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(#333, 0.25);
+    background-color: white;
+}
+
+.wrap-in {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include  only(mobile) {
+        display: none;
+    }
+}

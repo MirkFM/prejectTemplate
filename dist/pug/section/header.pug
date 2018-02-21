@@ -1,0 +1,8 @@
++b.s-header
+    .wrap-in
+        +e.block
+            +e.A.logo(href="/select.html")
+                img(src="/statics/img/logo.png" alt="")/
+            +e.contact
+                +e.phone!= data('page.contact.phone')
+                +e.descr!= data('page.contact.description')

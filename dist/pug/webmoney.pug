@@ -1,0 +1,23 @@
+extends _layout.pug
+
+block order-info-title
+    | Оплата банковской картой
+
+block confidentiality
+
+block content
+    +b.s-3ds
+        +e.block
+            .wrap-in
+                +e.img(src="/statics/img/pay-system/webmoney.png")
+                +e.text
+                    p Для продолжения оплаты заказа через WebMoney вам необходимо нажать на кнопку «Перейти к оплате».
+                    p После этого вы будете перенаправлены на платежную страницу системы WebMoney, на которой вы сможете завершить оплату заказа.
+                .clear
+
+            +e.btn
+                a.b-btn(href="/error.html") Перейти к оплате
+
+        +e.descr
+            .wrap-in
+                | По вопросам, связанным с условиями и сроками доставки товаров и услуг, обращайтесь, пожалуйста, к администрации сайта

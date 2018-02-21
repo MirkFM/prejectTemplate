@@ -1,0 +1,105 @@
+{
+    "env": {
+        "jquery": true,
+        "browser": true
+    },
+    "extends": "eslint:all",
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "prefer-arrow-callback": "off",
+        "prefer-destructuring": "off",
+        "init-declarations": "off",
+        "object-shorthand": [
+            2,
+            "consistent"
+        ],
+        "no-invalid-this": "off",
+        "sort-vars": "off",
+        "no-magic-numbers": [
+            "error",
+            {
+                "ignore": [
+                    -1,
+                    0,
+                    1
+                ]
+            }
+        ],
+        "capitalized-comments": "off",
+        "func-style": [
+            "error",
+            "declaration",
+            {
+                "allowArrowFunctions": true
+            }
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": true,
+                "variables": true
+            }
+        ],
+        "quote-props": [
+            "error",
+            "as-needed"
+        ],
+        "max-statements": [
+            "warn",
+            20,
+            {
+                "ignoreTopLevelFunctions": true
+            }
+        ],
+        "sort-keys": "off",
+        "quotes": [
+            "warn",
+            "double"
+        ],
+        "no-var": "off",
+        "require-jsdoc": "off",
+        "func-names": [
+            "warn",
+            "never"
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 140
+            }
+        ],
+        "operator-linebreak": [
+            "warn",
+            "before"
+        ],
+        "padded-blocks": [
+            "warn",
+            "never"
+        ],
+        "dot-notation": [
+            "warn",
+            {
+                "allowPattern": "^[a-z]+(_[a-z]+)+$"
+            }
+        ],
+        "dot-location": [
+            "warn",
+            "property"
+        ],
+        "object-curly-spacing": [
+            "warn",
+            "always"
+        ],
+        "no-extra-parens": [
+            "warn",
+            "all",
+            {
+                "nestedBinaryExpressions": false
+            }
+        ]
+    }
+}

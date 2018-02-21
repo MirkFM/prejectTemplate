@@ -1,0 +1,95 @@
++b.FORM.s-card-form(action="", method="GET")
+    .wrap-in
+        +e.block
+            +e.group
+                +e.field
+                    +e.field-info
+                        +b.b-info
+                            span#payment-system
+                    +e.field-data
+                        +e.INPUT.input(placeholder="Номер карты" name="cardNumber" value="" autofocus)
+                    +e.field-info
+                        +b.b-info Указан на лицевой стороне вашей карты
+                        +b.b-error Данное поле обязательно для заполения
+                +e.field
+                    +e.field-info
+                        +b.b-info Срок действия
+                        +b.b-error Данное поле обязательно для заполения
+                    +e.field-data
+                        +e.INPUT.input(placeholder="MM / ГГ", style="width: calc(50%); text-align: center; border-top-left-radius: 0; padding: 0;" name="expDate")
+                        +e.INPUT.input(maxlength="4" placeholder="CVV", style="width: calc(50% + 1px); text-align: center; border-top-left-radius: 0; margin-left: -1px; padding: 0;" name="cvv")
+                    +e.field-info
+                        +b.b-info Последние цифры на обороте вашей карты
+                        +b.b-error Данное поле обязательно для заполения
+                +e.field
+                    +e.field-info
+                    +e.field-data
+                        +e.INPUT.input(style="text-transform: uppercase;" placeholder="Держатель карты" name="cardHolder")
+                    +e.field-info
+                        +b.b-info Латинскими буквами, как на лицевой стороне карты
+                        +b.b-error Данное поле обязательно для заполения
+            +e.field
+                +e.field-info
+                +e.field-data
+                    +e.INPUT.input(placeholder="Банк, выдавший карту" name="bankName")
+                +e.field-info
+                    +b.b-info Название банка, указанное на карте
+                    +b.b-error Данное поле обязательно для заполения
+            +e.field
+                +e.field-info
+                +e.field-data
+                    +e.INPUT.input(placeholder="Email" name="email")
+                +e.field-info
+                    +b.b-info На этот e-mail придет информация о платеже
+                    +b.b-error Данное поле обязательно для заполения
+            +e.field
+                +e.field-info
+                +e.field-data
+                    +e.INPUT.input(placeholder="Почтовый индекс" name="postIndex")
+                +e.field-info
+                    +b.b-info Например: 112233
+                    +b.b-error Данное поле обязательно для заполения
+            +e.field
+                +e.field-info
+                +e.field-data
+                    +e.SELECT.select(placeholder="Страна" name="country")
+                        +e.OPTION.option(value=1) Россия
+                        +e.OPTION.option(value=2) Белоруссия
+                        +e.OPTION.option(value=3) Украина
+                +e.field-info
+                    +b.b-info Например: Россия
+                    +b.b-error Данное поле обязательно для заполения
+            +e.field
+                +e.field-info
+                +e.field-data
+                    +e.INPUT.input(placeholder="Регион" name="region")
+                +e.field-info
+                    +b.b-info Например: Ростовская область
+                    +b.b-error Данное поле обязательно для заполения
+            +e.field
+                +e.field-info
+                +e.field-data
+                    +e.INPUT.input(placeholder="Город" name="city")
+                +e.field-info
+                    +b.b-info Например: Оймякон
+                    +b.b-error Данное поле обязательно для заполения
+            +e.field
+                +e.field-info
+                +e.field-data
+                    +e.INPUT.input(placeholder="Адрес" name="address")
+                +e.field-info
+                    +b.b-info Например: 3-я ул. Строителей, д. 25, кв. 12
+                    +b.b-error Данное поле обязательно для заполения
+            +e.field
+                +e.field-info
+                +e.field-data
+                    +e.INPUT.input(placeholder="Телефон" name="phone")
+                +e.field-info
+                    +b.b-info Например: +7 495 666-22-80
+                    +b.b-error Данное поле обязательно для заполения
+
+            +e.btn
+                button.b-btn(type="submit") Оплатить
+
+            //- +e.btn
+            //-     a.b-btn(href="/3ds.html") Оплатить

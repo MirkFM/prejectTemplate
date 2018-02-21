@@ -1,0 +1,61 @@
+.s-order-info {
+    background: white;
+
+    &__description {
+
+
+        &.error, &.ok {
+            padding-right: 60px;
+            min-height: 54px;
+            background-position: right 0 top 0;
+            background-repeat: no-repeat;
+        }
+
+        &.error {
+            background-image: url('/statics/img/status/error-icon.png')
+        }
+
+        &.ok {
+            background-image: url('/statics/img/status/ok-icon.png')
+        }
+    }
+
+    &__title {
+        margin-bottom: 0.3em;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    &__title-main, &__title-additional {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    &__title-main {
+        font-size: 25px;
+    }
+
+    &__title-additional {
+        text-align: right;
+        padding: 10px 10px 0 0;
+
+        a {
+            text-decoration: none;
+            border-bottom: 1px dotted;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        margin: 0 0 22px;
+    }
+
+    &__sum {
+        color: white;
+        background: $clr-primary;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+    }
+}

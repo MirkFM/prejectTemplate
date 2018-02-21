@@ -1,0 +1,46 @@
+extends _layout.pug
+
+block order-info-title
+    | Ваш платеж прошел успешно
+
+block order-info-title-addition
+
+block content
+    +b.s-payment-status
+        +e.block
+            .wrap-in
+                +e.table
+                    +e.line
+                        +e.line-name Сумма платежа
+                        +e.line-value 2.00 RUB
+                    +e.line
+                        +e.line-name Дата и время
+                        +e.line-value 19 января, 2018 г., 15:46 (местное время)
+                    +e.line
+                        +e.line-name Адрес сайта
+                        +e.line-value http://site.com/
+                    +e.line
+                        +e.line-name Номер заказа
+                        +e.line-value 986946
+                    +e.line
+                        +e.line-name Номер транзакции
+                        +e.line-value 163359324
+                    +e.line
+                        +e.line-name Имя держателя карты
+                        +e.line-value ASDFASDF ADSFASDF
+                    +e.line
+                        +e.line-name Номер банковской карты
+                        +e.line-value ************1111
+                    +e.line
+                        +e.line-name Email
+                        +e.line-value mirk@inmera.com
+
+        +e.descr
+            .wrap-in
+                p Полная информация о платеже направлена на указанный вами e-mail.
+                p Также вы можете получить ее с помощью сервиса «Поиск платежей» на сайте процессингового центра PayOnline.
+                p В банковской выписке вы сможете найти этот платеж по идентификатору "For testing purpose only"
+
+        +e.return-url
+            .wrap-in
+                a(href="http://ya.ru") Вернуться на http://ya.ru

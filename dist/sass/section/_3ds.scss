@@ -1,0 +1,26 @@
+.s-3ds {
+    &__block {
+        padding: 20px 0 30px;
+        background: $clr-gray;
+    }
+
+    &__img {
+        float: left;
+        margin: 0 30px 20px 0;
+    }
+
+    &__text {
+        p {
+            margin: 1em;
+        }
+    }
+
+    &__descr {
+        margin: 40px 0 30px;
+    }
+
+    &__btn {
+        margin: 30px 0;
+        text-align: center;
+    }
+}

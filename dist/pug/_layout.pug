@@ -1,0 +1,32 @@
+include /node_modules/bemto.pug/bemto
+include /dist/pug/settings/bemto-settings
+include /dist/pug/utils/function
+
+doctype html
+html(lang=data('lang'))
+    head
+        include base/meta/base
+        title= data('title')
+        block head_link
+            link(rel='stylesheet', href="/statics/css/style.min.css")/
+        block custom_head_link
+    body
+        .wrap
+            include section/header
+
+            block order-info
+                include section/order-info
+
+            block content
+
+            include section/footer
+
+        block footer_link
+            script(src="/statics/vendor/jquery-3.3.1.js")
+            script(src="/statics/vendor/inputmask/inputmask.js")
+            script(src="/statics/vendor/inputmask/inputmask.extensions.js")
+            script(src="/statics/vendor/inputmask/jquery.inputmask.js")
+            script(src="/statics/js/payment-system.js")
+            script(src="/statics/js/main.js")
+
+        block custom_footer_link

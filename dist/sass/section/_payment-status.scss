@@ -1,0 +1,49 @@
+.s-payment-status {
+
+    &__block {
+        margin: 30px 0 20px;
+    }
+
+    &__table {
+        display: table;
+        width: 100%;
+    }
+
+    &__line {
+        display: table-row;
+    }
+
+    &__line-name, &__line-value {
+        display: table-cell;
+        border-bottom: 1px solid #eee;
+        padding: 3px 0;
+    }
+
+    &__line-name {
+        @include atRoot('.s-payment-status__line:last-child ') {
+            border-bottom: 0;
+        }
+    }
+
+    &__line-value {
+        text-align: right;
+
+        @include atRoot('.s-payment-status__line:last-child ') {
+            border-bottom: 0;
+        }
+    }
+
+    &__descr {
+        background: $clr-gray;
+        padding: 20px 0;
+        margin: 20px 0;
+
+        p {
+            margin: 0.55em 0;
+        }
+    }
+
+    &__return-url {
+        text-align: center;
+    }
+}

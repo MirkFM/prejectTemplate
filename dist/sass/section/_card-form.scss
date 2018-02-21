@@ -1,0 +1,120 @@
+.s-card-form {
+    background: #f5f5f7;
+
+    &__block {
+        padding: 30px 0;
+    }
+
+    &__field {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: 7px;
+    }
+
+    &__group {
+        margin-bottom: 7px;
+        padding-top: 1px;
+    }
+
+    &__group &__field {
+        margin-bottom: 0;
+        margin-top: -1px;
+    }
+
+    &__field-info, &__field-data {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__field-data {
+        padding: 0 10px;
+        font-size: 0;
+    }
+
+    &__field-info {
+        width: 170px;
+        font-size: 12px;
+        line-height: 1.2em;
+
+        &:first-child {
+            text-align: right;
+        }
+    }
+
+    &__input, &__select {
+        font-size: 14px;
+        width: 100%;
+        height: 38px;
+        line-height: 36px;
+        border: 1px solid #cececf;
+        border-radius: 5px;
+        padding: 0 13px;
+        position: relative;
+        z-index: 1;
+
+        &:focus {
+            border-color: $clr-primary;
+            z-index: 3;
+        }
+
+        @include atRoot('.s-card-form__group ') {
+            border-radius: 0;
+        }
+
+        @include atRoot('.s-card-form__group .s-card-form__field:first-child ') {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        @include atRoot('.s-card-form__group .s-card-form__field:last-child ') {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+    &__input {
+
+        &.incomplate {
+            border-color: red;
+            box-shadow: 0 0 1px red;
+            z-index: 2;
+        }
+
+        &::placeholder {
+            text-transform: none;
+        }
+
+        @include atRoot('.error ') {
+            border-color: red;
+            box-shadow: 0 0 1px red;
+            z-index: 2;
+        }
+    }
+
+    &__select {
+        @include atRoot('.error ') {
+            border-color: red;
+            box-shadow: 0 0 1px red;
+            z-index: 2;
+        }
+    }
+
+    &__btn {
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    .b-error {
+        color: red;
+        display: none;
+    }
+
+    .error .b-error {
+        display: block;
+    }
+
+    .error .b-info {
+        display: none;
+    }
+}

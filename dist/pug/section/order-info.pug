@@ -1,0 +1,15 @@
++b.s-order-info
+    .wrap-in
+        +e.description(class=data('page.payment-status'))
+            +e.title
+                +e.title-main
+                    block order-info-title
+
+                block order-info-title-addition
+                    +e.title-additional
+                        a(href="/select.html") Другие способы оплаты
+
+            +e.text
+                p Вы оплачиваете заказ, оформленный на сайте  <a href="http://ya.ru/" target="_blank">ya.ru</a>
+                p Номер заказа: 673528
+    +e.sum!= data('page.title')

@@ -1,0 +1,21 @@
+extends _layout.pug
+
+block order-info-title
+    | Кажется, что-то пошло не так
+
+block order-info-title-addition
+
+block content
+    +b.s-payment-status
+        +e.block
+            +e.text
+                .wrap-in
+                    p К сожалению, при обработке вашего платежа возникла техническая ошибка.
+
+        +e.descr
+            .wrap-in
+                p Рекомендуем вам вернуться на сайт интернет-магазина, на котором вы оформили заказ.
+
+        +e.return-url
+            .wrap-in
+                a(href="http://ya.ru") Вернуться на http://ya.ru

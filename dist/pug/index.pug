@@ -1,0 +1,14 @@
+extends _layout.pug
+
+block order-info
+
+block content
+    +b.s-start-page
+        .wrap-in
+            +e.title Внимание!
+            +e.text Платеж не может быть проведен.
+            +e.btn
+                a.b-btn(href="http://ya.ru") Вернуться в магазин
+
+            div
+                a.b-btn(href="/select.html") Дальше

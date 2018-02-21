@@ -1,0 +1,32 @@
+.s-select {
+    padding-top: 15px;
+
+    @include clearfix();
+
+    &__block {
+        margin-left: -20px;
+    }
+
+    &__item {
+        display: block;
+        text-decoration: none;
+        float: left;
+        width: 303px;
+        height: 110px;
+        margin: 0 0 14px 14px;
+        border: 1px solid #e5e5e7;
+        background: linear-gradient(#fcfcfd 0%, #fafafb 60%, #f1f1f1 100%);
+        padding: 20px 13px;
+        position: relative;
+
+        &:hover {
+            box-shadow: 0 0 15px rgba(#333, 0.25);
+        }
+    }
+
+    &__item-icon {
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
+    }
+}
