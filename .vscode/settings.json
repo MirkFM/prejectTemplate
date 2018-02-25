@@ -1,0 +1,41 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/source": true,
+        ".*": true,
+        "assets/**": true,
+        "source/**": true,
+        "pages/**": true,
+        "gulp-tasks/**": true,
+        "dist/sass/**/__.scss": true,
+        "dist/sass/helpers": true,
+        "gulpfile.js": true,
+        "package.json": true,
+        "package-lock.json": true,
+        "*.html": true,
+        "README.md": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/source": true,
+        "source/**": true
+    },
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": true,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+    "eslint.enable": true,
+    "eslint.options": {
+        "configFile": ".eslintrc"
+    },
+    "stylelint.enable": true,
+    "css.validate": true,
+    "scss.validate": false
+}

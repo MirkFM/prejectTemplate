@@ -19,6 +19,3 @@ dist/sass/helpers
 
 # Lock files
 package-lock.json
-
-# VS Code editor settings
-.vscode
