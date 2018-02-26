@@ -31,11 +31,14 @@
     "[css]": {
         "editor.formatOnSave": true
     },
+    "[scss]": {
+        "editor.formatOnSave": true
+    },
     "eslint.enable": true,
     "eslint.options": {
         "configFile": ".eslintrc"
     },
     "stylelint.enable": true,
     "css.validate": true,
-    "scss.validate": false
+    "scss.validate": true
 }
